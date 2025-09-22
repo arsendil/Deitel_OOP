@@ -1,0 +1,16 @@
+Interface Inheritance	                                            Implementation Inheritance
+The class inherits only the function signatures (i.e., contracts)	The class inherits concrete methods and data members
+Usually involves pure virtual functions (= 0)	                    May involve both virtual and non-virtual functions
+Used to define a common behavior contract across types	            Used to reuse code across similar types
+
+ Hierarchies Focused on Interface Inheritance
+
+Are modular and excellent for runtime polymorphism.
+Each derived class implements its own version of the interface.
+Represent “what the object can do”, not how it does it.
+Example: In your payroll system, the Employee class is an interface—it defines virtual double earnings() const = 0;. Derived classes like SalariedEmployee, HourlyEmployee, etc., implement that behavior.
+Hierarchies Focused on Implementation Inheritance
+Focus on reusing code from the base class.
+Derived classes may override or extend existing functionality.
+Tend to be more tightly coupled to base class implementation.
+Example: CommissionEmployee inherits from Employee and reuses data and logic, adding its own fields and behavior.

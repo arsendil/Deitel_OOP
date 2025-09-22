@@ -1,0 +1,10 @@
+Exercise 10.4
+
+friendship is a feature that allows a function, another class, or a method to access the private and protected members of a class.
+
+By default, private and protected members of a class are not accessible from outside the class. However, by declaring another function or class as a friend, you're explicitly granting access to those internal parts.
+
+One of the key principles of object-oriented programming is data hiding. Friendship allows external code to access private data, which violates this principle,
+Friend functions and classes create strong dependencies between modules. Changes in one class may force changes in its friend class or function.
+Too many friend relationships make it harder to isolate and reuse code, reducing maintainability.
+Overusing friendship can lead to poor design, where internal data is exposed unnecessarily, leading to fragile and error-prone code.

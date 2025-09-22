@@ -1,0 +1,9 @@
+Exercise 10.3
+
+new - Allocates memory for a single object.
+
+new[] - Alloicates memory for an array of objects.
+
+delete - Deallocates memory allocated by new.
+
+delete[] - Deallocates memory allocated by new[].

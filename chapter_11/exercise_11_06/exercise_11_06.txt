@@ -1,0 +1,13 @@
+Exercise 11.6
+
+Implicit conversions in C++ can be performed using conversion constructors, which are single-argument constructors that convert values of other types (including fundamental types) into objects of a given class.
+
+A typical use case is converting const char* C-style strings into objects of a user-defined String class.
+Another example is in a Complex class, where an int or double can be implicitly converted into a Complex object by treating the given value as the real part of the number.
+Similarly, in a HugeInteger class, an int value may be converted into a HugeInteger object by expanding the number into an array of digits.
+
+However, implicit conversions can sometimes introduce logical errors when conversions happen unexpectedly. For instance, converting a const char* into a String object automatically may not always be desirable. In such cases, it's better to use the explicit keyword to prevent implicit construction and enforce that conversions be made intentionally.
+
+This ensures code clarity and avoids bugs caused by unintended type conversions.
+
+

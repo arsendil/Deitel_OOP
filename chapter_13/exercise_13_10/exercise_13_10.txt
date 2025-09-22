@@ -1,0 +1,5 @@
+Exercise 13.10
+
+Polymorphism contributes to extensibility because it allows a program to work with different implementations through a common interface.
+This means you can add new classes or modify the behavior of existing ones without changing the code that uses that interface.
+It makes the system more flexible, simplifies adding new functionality, and reduces the impact of changes on other parts of the program.

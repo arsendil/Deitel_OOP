@@ -1,0 +1,9 @@
+Exercise 13.11
+
+Using polymorphic programming is especially effective for such tasks because flight simulators involve many different types of objects—airplanes, ground structures, weather phenomena, living entities, etc. Each object has its own unique behavior and graphical representation.
+
+Thanks to polymorphism, you can define common interfaces (for example, Draw(), Update() methods) and implement them differently for each specific object. As a result:
+
+Adding new objects (e.g., a new type of airplane or a new scenery element) does not require changing the existing code.
+The program becomes more extensible and easier to maintain.
+The code remains clean and well-structured because changes are isolated within individual object implementations rather than affecting the main logic.

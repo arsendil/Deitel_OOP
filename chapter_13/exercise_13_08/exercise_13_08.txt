@@ -1,0 +1,14 @@
+Exercise 13.8
+
+Virtual functions:
+
+Have an implementation (body) in the base class.
+Can be overridden in derived classes but don't have to be.
+Objects of the base class can be created.
+
+Pure virtual functions:
+
+Declared by assigning = 0 in the base class (e.g., virtual void f() = 0;).
+Have no implementation in the base class.
+Must be overridden in derived classes.
+Make the base class abstract, so you cannot instantiate objects of it.

@@ -1,0 +1,70 @@
+Exercise_11_14
+
+Describe precisely how the HugeInteger class works
+
+The HugeInteger class is designed to represent and manipulate arbitrarily large non-negative integers (up to 60 digits by default, configurable via the SIZE macro). It simulates big-integer arithmetic using an array of single digits, stored in base-10. Each digit is stored in an element of the fixed-size array digits_[], with the most significant digit at index 0 and the least significant digit at index SIZE - 1.
+
+The class supports:
+
+    Constructors from int, long, const char*, and copy construction
+
+    Arithmetic operators: addition (+), subtraction (-), multiplication (*), and division (/)
+
+    Comparison operators: ==, !=, <, >, <=, >=
+
+    I/O stream operators: << and >> for formatted output/input
+
+    Helper functions like isZero(), init(), getCount() for internal operations
+
+The implementation manually performs arithmetic similarly to how humans do it on paper:
+
+    Addition and subtraction handle carry/borrow digit-by-digit.
+
+    Multiplication multiplies each digit and shifts accordingly.
+
+    Division repeatedly subtracts the divisor from portions of the dividend to build the quotient.
+
+Each operation creates and returns a new HugeInteger instance rather than modifying the current one, ensuring immutability of the operands.
+
+What limitations does the class have?
+
+The current implementation of the HugeInteger class has several notable limitations:
+
+    Fixed Maximum Length:
+
+        The number of digits is limited by the SIZE macro (default: 60).
+
+        This means numbers longer than SIZE digits cannot be represented or processed.
+
+    Only Non-Negative Integers:
+
+        There is no support for negative numbers or sign handling.
+
+        Subtracting a larger number from a smaller one gives incorrect results without signaling an error.
+
+    No Overflow/Error Handling:
+
+        The class does not check for overflows in arithmetic operations.
+
+        If addition or multiplication exceeds SIZE, excess digits are silently lost.
+
+    Slow Division:
+
+        The division implementation uses repeated subtraction (brute-force), which is very inefficient for large numbers.
+
+    No Assignment or Move Semantics:
+
+        While the compiler-generated assignment/copy constructors work, the class does not provide custom ones, and there’s no move constructor/assignment.
+
+    Limited Input Validation:
+
+        The constructor from const char* and operator>> assume valid numeric strings without extra error checking for non-digits or excessive length.
+
+    No Base Support:
+
+        The class is hardcoded to base-10 (POWER = 10). It cannot be easily adapted to binary, hex, or arbitrary bases.
+
+    Static Memory:
+
+        The internal array is statically sized, using more memory than necessary for small numbers, and can't be resized dynamically.
+

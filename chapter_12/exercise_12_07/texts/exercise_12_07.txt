@@ -1,0 +1,26 @@
+Here’s the explanation of the class relationships in English:
+Base Class
+Shape 
+This is the top-level base class.
+All shapes inherit from this class.
+First Level
+TwoDimensionalShape (inherits from Shape)
+ThreeDimensionalShape (inherits from Shape)
+Second Level (2D Shapes)
+TwoDimensionalShape is further divided into: 
+Triangle 
+Could have subclasses like EquilateralTriangle, IsoscelesTriangle, etc.
+Circle 
+Subclasses include: Square, Rhombus, Trapezoid, Pentagon, Hexagon, Octagon
+All these subclasses inherit from TwoDimensionalShape.
+Second Level (3D Shapes)
+ThreeDimensionalShape is further divided into: 
+Cylinder 
+Subclasses: Tetrahedron, Cube, Cuboid, Octahedron, Dodecahedron, Icosahedron, Ellipsoid
+Cone 
+Subclasses: Sphere, SquarePyramid, TriangularPyramid, PentagonalPyramid
+All these subclasses inherit from ThreeDimensionalShape.
+Summary of relationships
+Shape -> base class
+TwoDimensionalShape and ThreeDimensionalShape -> direct subclasses of Shape
+All other shapes (Triangle, Circle, Cone, Cylinder, etc.) -> inherit from their corresponding intermediate class (TwoDimensionalShape or ThreeDimensionalShape).

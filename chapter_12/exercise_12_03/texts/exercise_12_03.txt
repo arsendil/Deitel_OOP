@@ -1,0 +1,8 @@
+Natural fit when there is an “is-a” relationship (BasePlusCommissionEmployee is a CommissionEmployee).
+Allows direct reuse and overriding of base class functionality (e.g., earnings()).
+Tighter coupling — changes in the base class may affect derived classes.
+Better encapsulation and modularity — CommissionEmployee is used as an internal part.
+Promotes looser coupling, safer for long-term maintenance and flexibility.
+Requires forwarding functions (e.g., getFirstName()), which can introduce redundancy.
+For this example, inheritance is more natural, because a base-salaried commission employee is still a commission employee.
+But in more flexible or modular designs, composition can offer better control and maintainability.

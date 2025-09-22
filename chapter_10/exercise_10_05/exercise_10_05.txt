@@ -1,0 +1,2 @@
+No, can not have both Time(int h = 0, int m = 0, int s = 0); and Time(); in the same class, because both act as default constructors (callable with no arguments).
+This causes ambiguity, and the compiler will not know which one to use, resulting in a compilation error.

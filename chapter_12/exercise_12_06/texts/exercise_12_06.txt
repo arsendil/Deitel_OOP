@@ -1,0 +1,25 @@
+Student – Base Class
+This is the top-level class that represents all students, regardless of their level. It might contain shared attributes and behaviors such as:
+Name
+Student ID
+Admission year
+Contact information
+This class defines the common interface for all types of students.2. UndergraduateStudent and GraduateStudent
+These two classes inherit from Student.
+ UndergraduateStudent represents bachelor's degree students.
+ GraduateStudent represents master's and doctoral students.
+They both inherit all shared attributes from Student, but can also add more specific properties or methods, such as enrollment status, thesis requirements, or course types.
+3. Freshman, Sophomore, Junior, Senior
+These all inherit from UndergraduateStudent and represent the academic year of the student:
+Freshman – 1st year
+Sophomore – 2nd year
+Junior – 3rd year
+Senior – 4th year
+Each subclass could specialize behavior based on the year—for example, which courses they're allowed to take, academic advising level, or access to internships.4. MastersStudent and DoctoralStudent
+These both inherit from GraduateStudent:
+MastersStudent is typically enrolled in a 1–2 year master's program.
+DoctoralStudent (PhD) is enrolled in a longer doctoral program and is often involved in research or teaching.
+They may share features like:
+Having a thesis or dissertation
+Working under an academic advisor
+Teaching assistant responsibilities (more common for doctoral students)

@@ -1,0 +1,16 @@
+a)
+Array 
+There is no meaning for array class to overload operators + , - , +=, -=, %, /, , *, &, /= etc
+But it has a huge  meaning and often necessary for overloading input (>>), output (<<) operators, [] and () operators, realational < , > <= >= == !=  operators and assignment operator = too.
+
+b)
+stack 
+There is no meaning for stack class to overload operators + , - , +=, -=, %, /, , *, &, /= etc
+But it has a huge  meaning and often necessary for overloading input (>>), output (<<) operators, [] and () operators, realational < , > <= >= == !=  operators and assignment operator = too.
+
+c)
+string 
+There is no meaning for string class to overload operators %, /, , *, &, /= etc
+But it has a huge  meaning and often necessary for overloading input (>>), output (<<) operators, [] and () operators, realational < , > <= >= == !=  operators and assignment operator.
+and +, -, += , -= too.
+

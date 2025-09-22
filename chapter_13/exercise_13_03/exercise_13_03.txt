@@ -1,0 +1,13 @@
+Exercise 13.3
+
+Polymorphism allows us to program “in general” because we can work with base class pointers or references without needing to know the exact derived type. The correct behavior is determined at runtime using virtual functions.
+Extensibility
+New types can be added without modifying existing code.
+Code Reusability
+Generic logic (like loops, containers, or algorithms) can work with any subclass of the base class.
+
+Decoupling
+Your high-level logic doesn’t depend on specific implementations. This leads to cleaner, more modular code.
+
+Ease of Substitution
+You can substitute different derived classes without changing the code that uses them, as long as they adhere to the base interface.

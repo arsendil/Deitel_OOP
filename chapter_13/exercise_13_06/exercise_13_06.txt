@@ -1,0 +1,2 @@
+A virtual function in C++ is a function declared in a base class that is meant to be overridden in derived classes. When you call a virtual function through a base class pointer or reference, the call is resolved at runtime based on the actual type of the object—this is called runtime polymorphism.
+Virtual functions are useful when you want polymorphic behavior, i.e., when working with base class pointers or references, but want the correct derived class version of the function to be called.

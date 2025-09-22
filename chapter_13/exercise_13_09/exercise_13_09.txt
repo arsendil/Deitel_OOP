@@ -1,0 +1,8 @@
+Exercise 13.9
+
+Additional levels of abstract base classes can be introduced between Shape and its derived classes to better organize the hierarchy. For example:
+
+Between Shape and TwoDimensionalShape/ThreeDimensionalShape, you could add an intermediate abstract class like PolygonalShape for shapes with polygonal boundaries.
+Another option is to introduce classes such as CurvedShape for shapes with curved edges.
+You could also have a level distinguishing between RegularShape (with equal sides/angles) and IrregularShape.
+These additional abstract classes help group shapes by shared characteristics and allow for more specialized interfaces and functionality at different abstraction levels.

@@ -1,0 +1,5 @@
+Quadrilateral is the root (base class).
+Trapezoid and Parallelogram inherit from Quadrilateral.
+Isosceles Trapezoid and RightTrapezoid inherit from Trapezoid.
+Rectangle and Rhombus inherit from Parallelogram.
+Square and GoldenRectangle inherit from Rectangle.

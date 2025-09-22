@@ -1,0 +1,16 @@
+Ease of reuse in inheritance
+Members marked protected are accessible to child classes, allowing for easier extension without needing getters/setters.
+Faster development and simpler interfaces
+Derived classes can directly access necessary internal data, speeding up coding and reducing boilerplate.
+Fine-grained control
+You can expose parts of a class to its descendants while still hiding them from outside users.
+
+Stronger encapsulation
+private completely hides data from any class outside the one that declares it — even derived classes.
+This helps maintain strict control over internal data.
+Better maintainability
+Since derived classes can't rely on private members, you can safely modify the internal implementation of the base class without risking breaking the subclasses.
+
+Some developers feel that protected breaks encapsulation by exposing internal data to external entities (i.e., subclasses).
+It can create tighter coupling between base and derived classes, making the design more fragile or harder to refactor.
+Use private by default to enforce encapsulation, and only use protected when you know subclasses genuinely need direct access to certain members.

@@ -1,0 +1,15 @@
+Exercise 11.10
+
++, -, +=,   this operators can be overloaded for string class
+ -- , ++  this operators can be overloaded complex class or another computering classes with integer memebers
+*, /, %, *=, /=, %= this operators meaningfull for classes with integer classes
+^, &, |, ^=, &=, |=
+~, !
+=  assignment operator meaningfull for all type class that I know
+<<, >>, >>=, <<=  meaningfull for array class , stack class, and many classes for input and output
+==, !=, <, >, <=, >= meaningfull for array class, string class stack class,  and classes with intehger values,
+&&, || 
+->*, ->, 
+[], ()  this operators I overloaded for array class, or string class as well
+new, delete, new[], delete[]
+

@@ -1,0 +1,22 @@
+Exercise 13.07
+
+Static Binding (early binding)
+Happens at compile time
+Used for non-virtual functions
+Fast and direct call
+Example: obj.print();
+
+Dynamic Binding (late binding)
+Happens at runtime
+Used for virtual functions
+Enables polymorphism
+Example: ptr->print(); when print() is virtual
+
+How Virtual Functions & vtable Work
+Each class with virtual functions has a vtable: a table of function pointers.
+Each object has a hidden pointer called vptr that points to its class’s vtable.
+When a virtual function is called (e.g., e->earnings();), the program:
+
+Follows vptr to the vtable
+Finds the correct function
+Calls it dynamically at runtime
